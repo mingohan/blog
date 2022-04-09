@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="程式玩樂趣">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://codeplay.fun/img/home-bgc.jpg">
+    <meta property="twitter:image" content="https://codeplay.fun/img/home-bgc.jpg" />
+    
+
+    
+    <meta name="title" content="test" />
+    <meta property="og:title" content="test" />
+    <meta property="twitter:title" content="test" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>test-CodePlay with Fun</title>
+
+    <link rel="canonical" href="/post/api/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">程式玩樂趣</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/javascript">javascript</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/life">life</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tech">tech</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/tips">tips</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/top/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/"></a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/home-bgc.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/javascript" title="JavaScript">
+                            JavaScript
+                        </a>
+                        
+                        <a class="tag" href="/tags/fetch" title="Fetch">
+                            Fetch
+                        </a>
+                        
+                    </div>
+                    <h1>test</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;&#34;
+                             
+                            on 
+                            Sunday, March 27, 2022
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <hr>
+<p>showonlyimage: true
+title: &ldquo;JavaScript 使用 Fetch 實作 API 資料抓取&rdquo;
+subtitle: &quot;&quot;
+excerpt: &quot;&quot;
+description: &ldquo;JavaScript 使用 Fetch 實作 API 資料抓取&rdquo;
+date: 2022-03-28
+author:     &ldquo;Mingo&rdquo;
+image: &ldquo;../../img/2022/0328_bgc.jpg&rdquo;
+published: true
+tags:</p>
+<ul>
+<li>JavaScript</li>
+<li>JS</li>
+<li>API</li>
+<li>Fetch</li>
+</ul>
+<p>categories: [JavaScript]
+URL: &ldquo;/2022/03/28/javascript-fetch-api/&rdquo;</p>
+<hr>
+<p>
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices question" ><ol>
+<li>回來的 json 資料要如何處裡 如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+<li>如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+</ol>
+</div>
+    
+    
+    
+
+
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices note" ><ol>
+<li>回來的 json 資料要如何處裡 如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+<li>如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+</ol>
+</div>
+    
+    
+    
+
+
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices hint" ><ol>
+<li>回來的 json 資料要如何處裡 如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+<li>如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+</ol>
+</div>
+    
+    
+    
+
+
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices notice" ><ol>
+<li>回來的 json 資料要如何處裡 如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+<li>如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return如何篩選出使用者輸入的地名，並將對應的資料 return</li>
+</ol>
+</div>
+    
+    
+    
+</p>
+<p>
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices note" ><p>A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer
+A notice disclaimer</p>
+</div>
+    
+    
+    
+
+
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices info" ><p>An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer
+An information disclaimer</p>
+</div>
+    
+    
+    
+
+
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices tip" ><p>A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer
+A tip disclaimer</p>
+</div>
+    
+    
+    
+
+
+<style media="screen">
+   
+  div.notices {
+    margin: 2rem 0;
+    position: relative;
+  }
+  div.notices p {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+  }
+  div.notices p:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices p:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  }
+  div.notices.question p {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+
+  div.notices.question p:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question p:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice p {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.notice p:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice p:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.note p:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note p:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint p {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+    padding-left: 140px;
+    min-height: 180px;
+  }
+  div.notices.hint p:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint p:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+   
+   div.notices li {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+    div.notices ol {
+    padding: 15px;
+    white-space: pre-wrap;
+    display: block;
+     
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: #666;
+    font-weight: bold;
+    padding-left: 160px;
+    min-height: 180px;
+  }
+
+  div.notices ol:first-child:before {
+    position: absolute;
+    top: 2px;
+    color: #fff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f06a";
+    left: 10px;
+  }
+  div.notices ol:first-child:after {
+    position: absolute;
+    top: -1px;
+    color: #fff;
+    left: 3rem;
+    font-size: 20px;
+  } 
+  
+   div.notices.question ol {
+    border-top: 30px solid #f0b37e;
+    background: #fff5cb;
+    color: #9f6000;
+    background-image: url("../../../../img/notice_icon/qa.png");
+    background-repeat: no-repeat;
+  }
+
+  div.notices.question ol:first-child:before {
+    content: "\f059";
+  }
+  div.notices.question ol:first-child:after {
+    content: " Question List";
+    font-weight: bold;
+  }
+  div.notices.notice ol {
+    border-top: 30px solid rgba(217, 83, 79, 0.8);
+    background: #fae2e2;
+    color: #d8000c;
+    background-image: url("../../../../img/notice_icon/notice.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.notice ol:first-child:before {
+    content: "\f071";
+  }
+  div.notices.notice ol:first-child:after {
+    content: " Notice";
+    font-weight: bold;
+  }
+  div.notices.note ol {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+    color: #059;
+    background-image: url("../../../../img/notice_icon/note.png");
+    background-repeat: no-repeat;
+  }
+  div.notices.note ol:first-child:before {
+    content: "\f1c0";
+  }
+  div.notices.note ol:first-child:after {
+    content: " Note";
+    font-weight: bold;
+  }
+  div.notices.hint ol {
+    border-top: 30px solid rgba(92, 184, 92, 0.8);
+    background: #e6f9e6;
+    color: #270;
+    background-image: url("../../../../img/notice_icon/hint.png");
+    background-repeat: no-repeat;
+
+  }
+  div.notices.hint ol:first-child:before {
+    content: "\f00c";
+  }
+  div.notices.hint ol:first-child:after {
+    content: " Hint";
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+</style>
+<div class="notices warning" ><p>A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer
+A warning disclaimer</p>
+</div>
+    
+    
+    
+</p>
+<h2 id="前言">前言</h2>
+<p>本實作將使用 JavaScript 中的 Fetch 語法去抓取公開資料 API(UBike)的數量，並可以讓使用者輸入關鍵字搜尋對應站點目前的單車數量。</p>
+<h2 id="設計流程">設計流程</h2>
+<p>
+  <img src="../../img/2022/2022-03-26-14-42-18.png" alt="">
+
+</p>
+<h2 id="程式碼">程式碼</h2>
+<p>卡住的程式碼</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">const</span> API <span style="color:#ff79c6">=</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f1fa8c">&#34;https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">const</span> inputWord <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.querySelector(<span style="color:#f1fa8c">&#34;.form-control fs-3&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">const</span> resultList <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">document</span>.querySelector(<span style="color:#f1fa8c">&#34;siteList list-group&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">async</span> <span style="color:#8be9fd;font-style:italic">function</span> getRawData(searchBarInput) {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> getData <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> fetch(API);
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> jsonData <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> getData.json();
+</span></span><span style="display:flex;"><span>  console.log(jsonData);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">function</span> searchInputWord() {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> jsonData.filter.ar((x) =&gt; {
+</span></span><span style="display:flex;"><span>    x <span style="color:#ff79c6">===</span> <span style="color:#f1fa8c">&#34;inputWord.value&#34;</span>;
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">function</span> putResultToWeb() {
+</span></span><span style="display:flex;"><span>  searchInputWord.forEach((r) =&gt; {
+</span></span><span style="display:flex;"><span>    resultList.insertAdjacentElement(r.);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/test/" data-toggle="tooltip" data-placement="top" title="test">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+                
+
+<div id="disqus-comment"></div>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mingohan" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/docker" title="docker">
+                            docker
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/fetch" title="fetch">
+                            fetch
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/istio" title="istio">
+                            istio
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/javascript" title="javascript">
+                            javascript
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/kubernetes" title="kubernetes">
+                            kubernetes
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/microservice" title="microservice">
+                            microservice
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/security" title="security">
+                            security
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/service-mesh" title="service-mesh">
+                            service-mesh
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tips" title="tips">
+                            tips
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/codeplayfun">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="程式玩樂趣" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; 程式玩樂趣 2022
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+</body>
+</html>

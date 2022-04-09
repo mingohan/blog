@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on 程式玩樂趣</title>
+    <link>https://codeplay.fun/tags/javascript/</link>
+    <description>Recent content in JavaScript on 程式玩樂趣</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 27 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://codeplay.fun/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>test</title>
+      <link>https://codeplay.fun/post/api/</link>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://codeplay.fun/post/api/</guid>
+      <description>showonlyimage: true title: &amp;ldquo;JavaScript 使用 Fetch 實作 API 資料抓取&amp;rdquo; subtitle: &amp;quot;&amp;quot; excerpt: &amp;quot;&amp;quot; description: &amp;ldquo;JavaScript 使用 Fetch 實作 API 資料抓取&amp;rdquo; date: 2022-03-28 author: &amp;ldquo;Mingo&amp;rdquo; image: &amp;ldquo;../../img/2022/0328_bgc.jpg&amp;rdquo; published: true tags: JavaScript JS API Fetch categories: [JavaScript] URL: &amp;ldquo;/2022/03/28/javascript-fetch-api/&amp;rdquo; div.notices { margin: 2rem 0; position: relative; } div.notices</description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://codeplay.fun/test/</link>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://codeplay.fun/test/</guid>
+      <description>test
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 on Mingo Blog</title>
+    <link>https://mingohan.github.io/tags/tag2/</link>
+    <description>Recent content in tag2 on Mingo Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mingohan.github.io/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Example Post</title>
+      <link>https://mingohan.github.io/post/1/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mingohan.github.io/post/1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
