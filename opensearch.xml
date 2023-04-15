@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Mingo 程式筆記暫存區</ShortName>
+  <Description>Search Mingo 程式筆記暫存區</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://mingodev.com/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://mingodev.com/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://mingodev.com/opensearch.xml" />
+  <moz:SearchForm>https://mingodev.com/</moz:SearchForm>
+</OpenSearchDescription>
