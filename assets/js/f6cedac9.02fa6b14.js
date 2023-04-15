@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[289],{3230:e=>{e.exports=JSON.parse('{"label":"\u5fc3\u7406\u5065\u5eb7","permalink":"/mingodev.github.io/blog/tags/\u5fc3\u7406\u5065\u5eb7","allTagsPath":"/mingodev.github.io/blog/tags","count":1}')}}]);
