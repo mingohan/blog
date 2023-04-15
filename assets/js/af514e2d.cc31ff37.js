@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[868],{6356:e=>{e.exports=JSON.parse('{"permalink":"/mingodev.github.io/blog/tags/\u81ea\u6211\u6210\u9577","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
